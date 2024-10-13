@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { Calendar, MessageCircle, BookOpen, ChevronRight, UserPlus } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -107,7 +107,7 @@ export default function LandingPage() {
               </div>
               <p>Book therapy sessions that work around your professional commitments, including early morning and evening slots.</p>
               <Image 
-                src="/placeholder.svg?height=200&width=300" 
+                src="/placeholder.svg" 
                 alt="Flexible appointment scheduling" 
                 width={300} 
                 height={200} 
@@ -123,7 +123,7 @@ export default function LandingPage() {
               </div>
               <p>Get immediate assistance with stress management, career guidance, and work-related mental health concerns.</p>
               <Image 
-                src="/placeholder.svg?height=200&width=300" 
+                src="/placeholder.svg" 
                 alt="AI Coach interface" 
                 width={300} 
                 height={200} 
@@ -139,7 +139,7 @@ export default function LandingPage() {
               </div>
               <p>Access expert advice on maintaining mental health while advancing your career, managing workplace stress, and achieving work-life balance.</p>
               <Image 
-                src="/placeholder.svg?height=200&width=300" 
+                src="/placeholder.svg" 
                 alt="Professional growth resources" 
                 width={300} 
                 height={200} 
@@ -153,7 +153,7 @@ export default function LandingPage() {
           <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-8 flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h2 className="text-3xl font-bold text-white mb-4">Navigate Work Stress</h2>
-              <p className="text-white mb-4">Our AI coach is here to help. Select the work-related concern you're facing right now:</p>
+              <p className="text-white mb-4">Our AI coach is here to help. Select the work-related concern you are facing right now:</p>
               <div className="flex flex-wrap justify-center gap-4">
                 {[
                   { text: "Work-Life Balance", emoji: "⚖️" },
@@ -174,7 +174,7 @@ export default function LandingPage() {
                 <h3 className="text-white text-2xl font-bold mb-4">Chat with ReachOut AI Coach</h3>
                 <div className="bg-white bg-opacity-20 rounded p-4 h-40 mb-4">
                   <Image 
-                    src="/placeholder.svg?height=160&width=300" 
+                    src="/placeholder.svg" 
                     alt="AI Coach chat interface" 
                     width={300} 
                     height={160} 
@@ -212,7 +212,7 @@ export default function LandingPage() {
             ].map((testimonial, index) => (
               <div key={index} className="bg-white bg-opacity-20 backdrop-blur-md text-white border-none p-6 rounded-lg">
                 <Image 
-                  src="/placeholder.svg?height=100&width=100" 
+                  src="/placeholder.svg" 
                   alt={`${testimonial.name}'s profile`} 
                   width={100} 
                   height={100} 
@@ -220,7 +220,7 @@ export default function LandingPage() {
                 />
                 <h3 className="text-xl font-bold">{testimonial.name}</h3>
                 <p className="text-white text-sm mb-2">{testimonial.role}</p>
-                <p className="italic">"{testimonial.quote}"</p>
+                <p className="italic">{testimonial.quote}</p>
               </div>
             ))}
           </div>
