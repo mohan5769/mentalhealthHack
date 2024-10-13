@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Calendar, MessageCircle, BookOpen, ChevronRight, UserPlus } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,11 +14,12 @@ export default function LandingPage() {
             <Link href="#features" className="text-white hover:text-green-200 transition-colors">Features</Link>
             <Link href="/about" className="text-white hover:text-green-200 transition-colors">About</Link>
             <Link href="#contact" className="text-white hover:text-green-200 transition-colors">Contact</Link>
-            <Link href="/signin">
-              <button className="bg-white bg-opacity-20 text-white hover:bg-white hover:text-blue-500 px-4 py-2 rounded">
-                Sign In
-              </button>
-            </Link>
+            <Link href="/signinpage">
+  <button className="bg-white bg-opacity-20 text-white hover:bg-white hover:text-blue-500 px-4 py-2 rounded">
+    Sign In
+  </button>
+</Link>
+
           </div>
         </nav>
       </header>
