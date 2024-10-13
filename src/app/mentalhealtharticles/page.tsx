@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Search, TrendingUp, Briefcase, Brain, Heart } from 'lucide-react';
+import { Search, Briefcase, Brain, Heart } from 'lucide-react';
 
 // Define a type for the article structure
 interface Article {

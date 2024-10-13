@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Sparkles, ArrowRight, Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import {Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
 
 export default function SignInPage() {

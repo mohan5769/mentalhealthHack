@@ -39,7 +39,7 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          At ReachOut, we're committed to supporting the mental well-being of working professionals aged 30-45. Our approach is built on three core principles: Empathy, Integrity, and Self-Reflection.
+          At ReachOut, we&#39;re committed to supporting the mental well-being of working professionals aged 30-45. Our approach is built on three core principles: Empathy, Integrity, and Self-Reflection.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-8 mb-20">
@@ -73,7 +73,7 @@ export default function AboutPage() {
           >
             <Lightbulb className="h-12 w-12 mb-4 text-blue-300" />
             <h2 className="text-2xl font-bold mb-4">Self-Reflection</h2>
-            <p>We encourage and guide you through the process of self-reflection. By developing this skill, you'll gain deeper insights into your thoughts, emotions, and behaviors, leading to personal growth and improved mental well-being in both your professional and personal life.</p>
+            <p>We encourage and guide you through the process of self-reflection. By developing this skill, you&#39;ll gain deeper insights into your thoughts, emotions, and behaviors, leading to personal growth and improved mental well-being in both your professional and personal life.</p>
           </motion.div>
         </div>
 
@@ -88,7 +88,7 @@ export default function AboutPage() {
             ReachOut is dedicated to empowering working professionals to achieve a harmonious balance between their career aspirations and mental well-being. We strive to create a supportive environment where individuals can thrive both professionally and personally.
           </p>
           <p className="text-xl">
-            Through our innovative blend of human expertise and AI-driven support, we aim to make mental health care accessible, personalized, and effective for the unique challenges faced by professionals in today's fast-paced work environment.
+            Through our innovative blend of human expertise and AI-driven support, we aim to make mental health care accessible, personalized, and effective for the unique challenges faced by professionals in today&#39;s fast-paced work environment.
           </p>
         </motion.div>
       </main>

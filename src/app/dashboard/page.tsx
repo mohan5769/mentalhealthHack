@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
-import { useState } from "react";
-import { ClipboardList, BookOpen, Trophy, ArrowRight, Calendar, Bell, Settings, BarChart } from "lucide-react";
+import { ClipboardList, BookOpen, Trophy, ArrowRight, Calendar, BarChart } from "lucide-react";
 import Link from "next/link";
 
 // Type for Progress component props

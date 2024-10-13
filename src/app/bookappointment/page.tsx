@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Button } from '../../components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
+import { Card, CardContent, CardHeader } from '../../components/ui/card';
 import { Input } from '../../components/ui/input';
 import { Label } from '../../components/ui/label';
 import { Calendar as CalendarIcon, Search, Star, Clock } from "lucide-react";
@@ -9,6 +9,7 @@ import Link from "next/link";
 import * as Dialog from '@radix-ui/react-dialog'; // Use Radix UI for Dialog
 import Calendar from 'react-calendar'; // Use react-calendar
 import { format } from "date-fns";
+import Image from 'next/image';
 
 // Dummy doctor data
 const doctors = [
@@ -144,7 +145,7 @@ export default function BookAppointment() {
           {doctors.map((doctor, index) => (
             <Card key={index} className="bg-white bg-opacity-20 backdrop-blur-md border-none text-white hover:bg-opacity-30 transition-all duration-300">
               <CardHeader className="flex flex-row items-center gap-4">
-                <img src={doctor.image} alt={doctor.name} className="rounded-full w-16 h-16 object-cover" />
+                <Image src={doctor.image} alt={doctor.name} className="rounded-full w-16 h-16 object-cover" />
                 <div>
                   <h3 className="text-xl font-bold">{doctor.name}</h3> {/* Updated this */}
                   <p className="text-sm text-gray-200">{doctor.specialty}</p>
