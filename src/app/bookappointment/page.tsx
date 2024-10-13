@@ -6,10 +6,9 @@ import { Input } from '../../components/ui/input';
 import { Label } from '../../components/ui/label';
 import { Calendar as CalendarIcon, Search, Star, Clock } from "lucide-react";
 import Link from "next/link";
-import * as Dialog from '@radix-ui/react-dialog'; // Use Radix UI for Dialog
-import Calendar from 'react-calendar'; // Use react-calendar
+import * as Dialog from '@radix-ui/react-dialog';
+import Calendar from 'react-calendar'; 
 import { format } from "date-fns";
-import Image from 'next/image';
 
 // Dummy doctor data
 const doctors = [
@@ -18,16 +17,13 @@ const doctors = [
     specialty: "Cognitive Behavioral Therapy",
     rating: 4.9,
     nextAvailable: "Tomorrow",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/female-doctor-1-Rl9Hy7Ux5kcWxrZZVZOQQRPXZXZXZX.jpg",
     gender: "female"
   },
-  // Add more doctors as needed... {
-    {
+  {
     name: "Dr. Michael Chen",
     specialty: "Stress Management",
     rating: 4.8,
     nextAvailable: "In 2 days",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/male-doctor-1-7FEP9jtXXXXXXXXXXXXXXXXXXXXXXX.jpg",
     gender: "male"
   },
   {
@@ -35,7 +31,6 @@ const doctors = [
     specialty: "Work-Life Balance Counseling",
     rating: 4.7,
     nextAvailable: "Next week",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/female-doctor-2-Rl9Hy7Ux5kcWxrZZVZOQQRPXZXZXZX.jpg",
     gender: "female"
   },
   {
@@ -43,7 +38,6 @@ const doctors = [
     specialty: "Career Counseling",
     rating: 4.9,
     nextAvailable: "Today",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/male-doctor-2-7FEP9jtXXXXXXXXXXXXXXXXXXXXXXX.jpg",
     gender: "male"
   },
   {
@@ -51,7 +45,6 @@ const doctors = [
     specialty: "Anxiety and Depression",
     rating: 4.8,
     nextAvailable: "In 3 days",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/female-doctor-3-Rl9Hy7Ux5kcWxrZZVZOQQRPXZXZXZX.jpg",
     gender: "female"
   },
   {
@@ -59,7 +52,6 @@ const doctors = [
     specialty: "Burnout Prevention",
     rating: 4.7,
     nextAvailable: "Tomorrow",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/male-doctor-3-7FEP9jtXXXXXXXXXXXXXXXXXXXXXXX.jpg",
     gender: "male"
   }
 ];
@@ -145,9 +137,8 @@ export default function BookAppointment() {
           {doctors.map((doctor, index) => (
             <Card key={index} className="bg-white bg-opacity-20 backdrop-blur-md border-none text-white hover:bg-opacity-30 transition-all duration-300">
               <CardHeader className="flex flex-row items-center gap-4">
-                <Image src={doctor.image} alt={doctor.name} className="rounded-full w-16 h-16 object-cover" />
                 <div>
-                  <h3 className="text-xl font-bold">{doctor.name}</h3> {/* Updated this */}
+                  <h3 className="text-xl font-bold">{doctor.name}</h3>
                   <p className="text-sm text-gray-200">{doctor.specialty}</p>
                 </div>
               </CardHeader>
