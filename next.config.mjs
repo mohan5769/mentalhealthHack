@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    reactStrictMode: true, // Helps highlight potential problems in your application
+    // You can add more configuration options as needed
+  };
+  
+  export default nextConfig;
+  
